@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autopro Logistics Inc. | Nationwide Auto Transport</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<div class="bg-animation">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="top-bar">
+    <p>Your Vehicle Deserves The Best Ride</p>
+</div>
+<header id="navbar">
+<div class="logo">
+    <img src="logo.png" alt="Autopro Logistics Logo">
+</div>
+<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#quote">Quote</a>
+    <a href="#" id="bookNowBtn" class="book-btn">Book Now</a>
+</nav>
+</header>
+<section class="hero reveal" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Luxury Auto Transport Services Across The United States</h1>
+        <p>Fully insured. Professionally managed. Delivered with precision.</p>
+        <a href="#quote" class="btn">Request A Free Quote</a>
+    </div>
+</section>
+<section id="quote" class="quote-section reveal">
+    <div class="quote-overlay"></div>
+    <div class="quote-container">
+        <h2>Get a Quote</h2>
+        <p class="subtitle">Instant Car Shipping Online Quote – Only Takes a Minute</p>
+        <form action="https://formsubmit.co/info@autoprologisticsinc.com" method="POST">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="Phone" placeholder="(000) 000 0000" required>
+                </div>
+                <div class="form-group">
+                    <label>Transport Method</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="Transport" value="Open"> Open</label>
+                        <label><input type="checkbox" name="Transport" value="Enclosed"> Enclosed</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Vehicle Condition</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="Condition" value="Running"> Running</label>
+                        <label><input type="checkbox" name="Condition" value="Non Running"> Non Running</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label>Pickup ZIP Code</label>
+                        <input type="text" id="pickupZip" name="Pickup Zip" maxlength="5" required>
+                </div>
+                <div class="form-group">
+                        <label>Pickup State</label>
+                        <input type="text" id="pickupState" name="Pickup State" readonly>
+                </div>
+                <div class="form-group">
+                        <label>Drop-off ZIP Code</label>
+                        <input type="text" id="dropZip" name="Dropoff Zip" maxlength="5" required>
+                </div>
+                <div class="form-group">
+                        <label>Drop-off State</label>
+                        <input type="text" id="dropState" name="Dropoff State" readonly>
+                </div>
+                <div class="form-group">
+                        <label>Make</label>
+                        <input type="text" name="Make">
+                </div>
+
+                <div class="form-group">
+                        <label>Model</label>
+                        <input type="text" name="Model">
+                </div>
+                <div class="form-group">
+                        <label>Year</label>
+                        <select name="Year">
+                            <option>Select Year</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label>Pick-up Date</label>
+                    <input type="date" name="Pickup Date">
+                </div>
+                <div class="form-group">
+                    <label>Pickup Time</label>
+                    <input type="time" name="Pickup Time">
+                </div>
+                <div class="form-group full-width">
+                    <label>Additional Information</label>
+                    <textarea name="Additional Info"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label class="agree">
+                        <input type="checkbox" required>
+                        By checking this box, I agree to receive SMS messages about auto transportation.
+                    </label>
+                </div>
+                <div class="form-group full-width">
+                    <label class="agree">
+                        <input type="checkbox" required>
+                        I have read and agreed to the privacy policy.
+                    </label>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+</section>
+<section id="services" class="section reveal">
+    <h2 class="section-title">Premium Transport Services</h2>
+    <div class="services-grid">
+        <div class="card">
+            <i class="fas fa-truck"></i>
+            <h3>Open Car Transport</h3>
+            <p>Efficient nationwide shipping with maximum reliability.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-car-side"></i>
+            <h3>Enclosed Transport</h3>
+            <p>Elite protection for luxury, exotic & classic vehicles.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-bolt"></i>
+            <h3>Expedited Shipping</h3>
+            <p>Priority transport with faster pickup and delivery.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-road"></i>
+            <h3>Cross Country</h3>
+            <p>Secure coast-to-coast vehicle logistics solutions.</p>
+        </div>
+    </div>
+</section>
+<section id="about" class="section reveal">
+    <h2 class="section-title">Why Autopro Logistics</h2>
+    <div class="about-container">
+        <p>
+        We provide safe, fully insured auto transport services nationwide. 
+        Our professional carrier network ensures white-glove handling and timely delivery.
+        </p>
+        <div class="features">
+            <div><i class="fas fa-shield-alt"></i> Licensed & Insured</div>
+            <div><i class="fas fa-dollar-sign"></i> Transparent Pricing</div>
+            <div><i class="fas fa-truck-moving"></i> Door-to-Door Delivery</div>
+            <div><i class="fas fa-headset"></i> Dedicated Support</div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact-section reveal">
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h2>Contact Autopro Logistics</h2>
+            <p class="contact-subtitle">
+                Professional Auto Transport Solutions Nationwide
+            </p>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>Call Us</h4>
+                    <p>(000) 000-0000</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>info@autoprologisticsinc.com</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Office Address</h4>
+                    <p>123 Berkeley Ave, Selden, NY 11784</p>
+                </div>
+            </div>
+            <div class="compliance-box">
+             <h4>Licensed & Registered</h4>
+             <div class="compliance-details">
+             <p><strong>USDOT:</strong> 4322097</p>
+             <p><strong>MC:</strong> 01686972</p>
+             </div>
+             <div class="compliance-logos">
+                    <img src="fmcsa.png" alt="FMCSA Registered">
+                    <img src="logo2.png" alt="Second Certification">
+                    <img src="logo3.png" alt="Third Certification">
+                    <img src="logo4.png" alt="Third Certification">
+             </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Send Us A Message</h3>
+            <form action="https://formsubmit.co/info@autoprologisticsinc.com" method="POST">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Email Address" required>
+                <input type="text" name="Phone" placeholder="Phone Number">
+                <select name="Inquiry Type">
+                    <option>General Inquiry</option>
+                    <option>Quote Follow Up</option>
+                    <option>Carrier Inquiry</option>
+                    <option>Dealer / Fleet Transport</option>
+                </select>
+                <textarea name="Message" placeholder="Your Message" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="bookingSection" class="booking-section">
+    <div class="booking-overlay"></div>
+    <div class="booking-container">
+        <button class="close-booking" id="closeBooking">&times;</button>
+        <h2>Complete Your Booking</h2>
+        <p class="subtitle">Secure Your Transport With Autopro Logistics</p>
+        <form action="https://formsubmit.co/info@autoprologisticsinc.com" method="POST">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="Phone" placeholder="(000) 000 0000" required>
+                </div>
+                <div class="form-group">
+                    <label>Transport Method</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="Transport" value="Open"> Open</label>
+                        <label><input type="checkbox" name="Transport" value="Enclosed"> Enclosed</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Vehicle Condition</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="Condition" value="Running"> Running</label>
+                        <label><input type="checkbox" name="Condition" value="Non Running"> Non Running</label>
+                    </div>
+                </div>
+                <div class="form-group">
+    <label>Pickup ZIP Code</label>
+    <input type="text" id="pickupZip" name="Pickup Zip" maxlength="5" required>
+</div>
+<div class="form-group">
+    <label>Pickup State</label>
+    <input type="text" id="pickupState" name="Pickup State" readonly>
+</div>
+<div class="form-group">
+    <label>Drop-off ZIP Code</label>
+    <input type="text" id="dropZip" name="Dropoff Zip" maxlength="5" required>
+</div>
+<div class="form-group">
+    <label>Drop-off State</label>
+    <input type="text" id="dropState" name="Dropoff State" readonly>
+</div>
+                <div class="form-group">
+                    <label>Make</label>
+                    <input type="text" name="Make">
+                </div>
+                <div class="form-group">
+                    <label>Model</label>
+                    <input type="text" name="Model">
+                </div>
+                <div class="form-group">
+                    <label>Year</label>
+                    <select name="Year">
+                        <option>Select Year</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Pick-up Date</label>
+                    <input type="date" name="Pickup Date">
+                </div>
+                <div class="form-group">
+                    <label>Pickup Time</label>
+                    <input type="time" name="Pickup Time">
+                </div>
+                <div class="form-group full-width">
+                    <label>Additional Information</label>
+                    <textarea name="Additional Info"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label class="agree">
+                        <input type="checkbox" required>
+                        By checking this box, I agree to receive SMS messages about auto transportation.
+                    </label>
+                </div>
+            <div class="form-group full-width">
+               <label class="agree">
+               <input type="checkbox" id="termsCheckbox" required>
+               I agree to the <span id="openTerms" style="color:#f5a623; cursor:pointer;">Terms & Conditions</span>
+              </label>
+            </div>
+                <div class="form-group full-width">
+                    <button type="submit" id="bookingSubmit" disabled>Confirm Booking</button>                </div>
+
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+</section>
+<section id="termsModal" class="terms-modal">
+    <div class="terms-box">
+        <button class="close-terms" id="closeTerms">&times;</button>
+        <h2>Terms & Conditions - Autopro Logistics</h2>
+        <div class="terms-content">
+            <p>
+                <ol>
+                    <li>Autopro Logistics is authorized to operate and transport the motor vehicle between the pickup location and the designated destination. While efforts will be made to confirm a shipment for the estimated date and price, there is no guarantee of a specific pickup or delivery date. Changes may occur due to driver schedules, mechanical failure, weather conditions, or unforeseen circumstances. There are many factors that may cause delays before and after pickup, such as excessive traffic, port congestion, severe weather, or carrier breakdowns. In such circumstances, Autopro Logistics will not be held responsible for any charges or liabilities resulting from delays in pickup or delivery, including airline tickets or rental car expenses. The driver’s schedule will be provided to the client upon dispatch. The customer is responsible for making necessary arrangements to ensure timely pickup and delivery.</li>
+                    <li>The client agrees not to engage the services of any other broker or carrier during the designated shipping period. Doing so will result in a non-refundable deposit.</li>
+                    <li>We recommend not placing personal items inside the vehicle, as they are not insured. However, if necessary, personal items must be placed in the trunk and limited to 100 lbs. The carrier is not liable for damage caused by excessive or improper loading of personal belongings. Any exceptions must be approved in advance by Autopro Logistics. Additional fees may apply for excess weight. Misrepresentation of personal items may result in a price adjustment, a dry run fee of $150, or no refund upon cancellation if the carrier is dispatched under different conditions than expected. If the vehicle is not ready as indicated when the driver is dispatched, a rescheduling fee of $75.00 will apply. If the shipper is unavailable at pickup or delivery, an alternate representative must be designated.</li>
+                    <li>Vehicles must be provided in good running condition with no more than half a tank of fuel. The driver is not liable for damage caused by leaking fluids, freezing, exhaust issues, or loose/untied antennas. Any claims for loss or damage must be noted and signed on the Bill of Lading (BOL) at delivery. Autopro Logistics provides door-to-door transport; however, access may be limited due to narrow streets, low-hanging trees, or tight turns. In such cases, the driver may request to meet at a nearby open parking area (e.g., grocery store parking lot).</li>
+                    <li>Trucking damage claims are covered by carriers from $100,000 up to $250,000 cargo insurance per load, and a minimum of 3/4 of a million dollars public liability and property damage. Any damage incurred to a vehicle during transport falls directly under the responsibility of the carrier and not Autopro logistics INC . All carriers contracted will have insurance to cover damage caused by the driver or theft during transport. If damage is done, Autopro logistics INC . will provide you with a full insurance packet for the carrier to file a claim. All claims must be noted and signed for at time of delivery and submitted in writing within 15 days of delivery.</li>
+                    <li>If the vehicle is not ready at the scheduled pickup time, a $75.00 rescheduling fee will apply. If the vehicle becomes unavailable during the scheduled pickup window after an order has been placed, the deposit will not be refunded.</li>
+                    <li>The client must not release or receive the vehicle without completing an inspection report (Bill of Lading), regardless of time or weather conditions. Failure to do so may prevent filing a damage claim. Insurance covers only damages caused by driver negligence. Any damage must be listed on the BOL and signed by the driver before leaving the delivery location. The remaining balance must be paid as agreed. Failure to note damage on the BOL releases the driver from liability.</li>
+                    <li>In case of claims or shipment issues, the customer must notify Autopro Logistics before the driver leaves and before withholding payment or refusing to sign the BOL. Failure to follow this procedure releases Autopro Logistics from responsibility for subsequent claims.</li>
+                    <li>A non-operational fee of $150.00 applies to non-running vehicles. This fee is included in the final quote if disclosed. If the vehicle becomes non-operational during transport, the fee will be added to the original quote. The final confirmed quote will be provided at dispatch.</li>
+                    <li>Autopro Logistics agrees to arrange prompt transportation but does not guarantee specific pickup or delivery dates. A $200 cancellation fee applies to orders canceled within 3 business days of the requested pickup date. Autopro Logistics is not responsible for rental vehicle costs or mechanical failures of transported vehicles. The shipper agrees to pay the quoted price and acknowledges no refund will be issued after service fulfillment.</li>
+                    <li>The shipper warrants payment of the agreed price for delivered vehicles. This agreement is subject to all carrier tariff terms and the Uniform Straight Bill of Lading. This document constitutes the entire agreement between the shipper and Autopro Logistics and supersedes all prior oral or written representations. Any changes must be in writing and signed by an authorized officer of Autopro Logistics. Autopro Logistics reserves the right to cancel orders at any time.</li>
+                    <li>Once the shipment is delivered and all paperwork is signed, no refunds or discounts will be issued by Autopro Logistics.</li>
+                    <li>This agreement shall be governed by the laws of the State of Texas. Any legal action must be filed in a court of proper jurisdiction within Florida. Autopro Logistics’ liability is limited to the amount of its broker fee. By accepting these terms, the client authorizes a deposit via credit/debit card, check by phone, or mail. The remaining balance is due upon delivery and must be paid by cash, cashier’s check, or money order to the authorized carrier.</li>
+                </ol>
+            </p>
+        </div>
+        <button id="acceptTerms" class="accept-btn">I Accept</button>
+    </div>
+</section>
+<footer>
+© 2026 Autopro Logistics Inc. | All Rights Reserved
+</footer>
+</body>
+</html>
