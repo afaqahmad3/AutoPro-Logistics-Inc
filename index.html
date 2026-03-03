@@ -16,9 +16,11 @@
     <span></span>
 </div>
 <div class="top-bar">
-    <p>Your Vehicle Deserves The Best Ride</p>
-</div>
-<header id="navbar">
+    <div class="marquee">
+        <span>
+            Your Vehicle Deserves The Best Ride • Working Hour: 9AM-9PM (EST) • Call Us 0000000000  • Email Us: info@autoprologisticsinc.com
+    </div>
+</div><header id="navbar">
 <div class="logo">
     <img src="logo.png" alt="Autopro Logistics Logo">
 </div>
@@ -32,7 +34,6 @@
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-    <a href="#quote">Quote</a>
     <a href="#" id="bookNowBtn" class="book-btn">Book Now</a>
 </nav>
 </header>
@@ -105,8 +106,8 @@
                 </div>
                 <div class="form-group">
                         <label>Year</label>
-                        <select name="Year">
-                            <option>Select Year</option>
+                        <select name="Year" class="yearSelect" required>
+                        <option value="">Select Year</option>
                         </select>
                 </div>
                 <div class="form-group">
@@ -181,6 +182,52 @@
         </div>
     </div>
 </section>
+<section class="faq-section reveal">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How long does vehicle transport take?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                Transit time depends on distance. Most deliveries take between 2–7 days nationwide.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Is my vehicle insured during transport?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                Yes. Every shipment is covered up to $250,000 cargo insurance.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is the difference between open and enclosed transport?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                Open transport is cost-effective. Enclosed transport provides premium protection for luxury and exotic vehicles.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you offer door-to-door delivery?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                Yes. We provide convenient door-to-door auto transport services nationwide.
+            </div>
+        </div>
+
+    </div>
+</section>
 <section id="contact" class="contact-section reveal">
     <div class="contact-wrapper">
         <div class="contact-info">
@@ -241,6 +288,16 @@
             </form>
         </div>
     </div>
+    <div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps?q=123+Berkeley+Ave,+Selden,+NY+11784&output=embed"
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</div>
 </section>
 <section id="bookingSection" class="booking-section">
     <div class="booking-overlay"></div>
@@ -293,8 +350,8 @@
                 </div>
                 <div class="form-group">
                     <label>Year</label>
-                    <select name="Year">
-                        <option>Select Year</option>
+                        <select name="Year" class="yearSelect" required>
+                        <option value="">Select Year</option>
                     </select>
                 </div>
                 <div class="form-group">
