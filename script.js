@@ -100,3 +100,29 @@ const navMenu = document.getElementById("navMenu");
 hamburger.addEventListener("click", function(){
     navMenu.classList.toggle("active");
 });
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item=>{
+    const btn = item.querySelector(".faq-question");
+    btn.addEventListener("click", ()=>{
+        item.classList.toggle("active");
+    });
+});
+
+
+function populateYears(){
+    const yearSelects = document.querySelectorAll(".yearSelect");
+    const startYear = 1900;
+    const endYear = 2030;
+
+    yearSelects.forEach(select => {
+        for(let year = endYear; year >= startYear; year--){
+            const option = document.createElement("option");
+            option.value = year;
+            option.textContent = year;
+            select.appendChild(option);
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", populateYears);
