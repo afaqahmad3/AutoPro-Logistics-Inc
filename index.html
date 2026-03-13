@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autopro Logistics Inc</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script defer src="script.js"></script>
+    </head>
+<body>
+    <div class="top-bar">
+        <div class="marquee">
+            Your Vehicle Deserves The Best Ride • Working Hour: 9AM-9PM (EST) • Call Us 0000000000 • Email: info@autoprologisticsinc.com
+        </div>
+    </div>
+    <header id="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Autopro Logistics Logo">
+            </div>
+            <div class="company-name">AutoPro Logistics Inc</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <nav id="navMenu">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#" id="faqBtn">FAQs</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#" id="bookNowBtn">Book Now</a>
+                </nav>
+    </header>
+
+    <section class="hero reveal" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Luxury Auto Transport Services Across The United States</h1>
+            <p>Fully insured. Professionally managed. Delivered with precision.</p>
+            <a href="#quote" class="btn">Request A Free Quote</a>
+        </div>
+    </section>
+
+    <section id="quote" class="quote-section reveal">
+        <div class="quote-overlay"></div>
+        <div class="quote-container">
+            <h2>Get a Quote</h2>
+            <p class="subtitle">Instant Car Shipping Online Quote – Only Takes a Minute</p>
+            <form action="https://formsubmit.co/info@autoprologisticsinc.com" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" name="Phone" placeholder="(000) 000 0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Make</label>
+                        <input type="text" name="Make">
+                    </div>
+                    <div class="form-group">
+                        <label>Model</label>
+                        <input type="text" name="Model">
+                    </div>
+                    <div class="form-group">
+                        <label>Year</label>
+                        <input type="text" name="Year">
+                    </div>
+                    <div class="form-group">
+                        <label>Pickup ZIP Code</label>
+                        <input type="text" id="pickupZip" name="Pickup Zip" maxlength="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Pickup State</label>
+                        <input type="text" id="pickupState" name="Pickup State" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Drop-off ZIP Code</label>
+                        <input type="text" id="dropZip" name="Dropoff Zip" maxlength="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Drop-off State</label>
+                        <input type="text" id="dropState" name="Dropoff State" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Pick-up Date</label>
+                        <input type="date" name="Pickup Date">
+                    </div>
+                    <div class="form-group">
+                        <label>Pickup Time</label>
+                        <input type="time" name="Pickup Time">
+                    </div>
+                    <div class="form-group">
+                        <label>Transport Method</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="Transport" value="Open"> Open</label>
+                                <label><input type="checkbox" name="Transport" value="Enclosed"> Enclosed</label>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Vehicle Condition</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="Condition" value="Running"> Running</label>
+                            <label><input type="checkbox" name="Condition" value="Non Running"> Non Running</label>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Additional Information</label>
+                        <textarea name="Additional Info"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="agree">
+                        <input type="checkbox" required>
+                            By checking this box, I agree to receive SMS messages about auto transportation.
+                        </label>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="agree">
+                        <input type="checkbox" required>
+                            I have read and agreed to the privacy policy.
+                        </label>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Submit</button>
+                    </div>
+                    </div>
+                        <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+    <section id="bookingSection" class="booking-section">
+        <div class="booking-overlay"></div>
+        <div class="booking-container">
+            <button class="close-booking" id="closeBooking">&times;</button>
+                <h2>Complete Your Booking</h2>
+                <p class="subtitle">Secure Your Transport With Autopro Logistics</p>
+            <form action="https://formsubmit.co/info@autoprologisticsinc.com" method="POST">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="Phone" placeholder="(000) 000 0000" required>
+                </div>
+                <div class="form-group">
+                    <label>Complete Pickup Address</label>
+                    <input type="text" name="Pickup Address">
+                </div>
+                <div class="form-group">
+                    <label>Complete Drop-off Address</label>
+                    <input type="text" name="Drop Address">
+                </div>
+                <div class="form-group">
+                    <label>Make</label>
+                    <input type="text" name="Make">
+                </div>
+                <div class="form-group">
+                    <label>Model</label>
+                    <input type="text" name="Model">
+                </div>
+                <div class="form-group">
+                    <label>Year</label>
+                    <input type="text" name="Year">
+                </div>
+                <div class="form-group">
+                    <label>Pick-up Date</label>
+                    <input type="date" name="Pickup Date">
+                </div>
+                <div class="form-group">
+                    <label>Quote ID (if exist)</label>
+                    <input type="text" name="Quote ID">
+                </div>
+                <div class="form-group">
+                    <label>Transport Method</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="Transport" value="Open"> Open</label>
+                        <label><input type="checkbox" name="Transport" value="Enclosed"> Enclosed</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Vehicle Condition</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="Condition" value="Running"> Running</label>
+                        <label><input type="checkbox" name="Condition" value="Non Running"> Non Running</label>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label>Additional Information</label>
+                    <textarea name="Additional Info"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label class="agree">
+                        <input type="checkbox" required>
+                            By checking this box, I agree to receive SMS messages about auto transportation.
+                    </label>
+                </div>
+                <div class="form-group full-width">
+                    <label class="agree">
+                        <input type="checkbox" id="termsCheckbox" required>
+                            I agree to the <span id="openTerms" style="color:#f5a623; cursor:pointer;">Terms & Conditions</span>
+                    </label>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit" id="bookingSubmit" disabled>Confirm Booking</button>                </div>
+                </div>
+                    <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+
+    <section id="termsModal" class="terms-modal">
+        <div class="terms-box">
+            <button class="close-terms" id="closeTerms">&times;</button>
+            <h2>Terms & Conditions - Autopro Logistics</h2>
+            <div class="terms-content">
+                <p>
+                    <ol>
+                        <li>Autopro Logistics is authorized to operate and transport the motor vehicle 
+                            between the pickup location and the designated destination. While efforts 
+                            will be made to confirm a shipment for the estimated date and price, 
+                            there is no guarantee of a specific pickup or delivery date. 
+                            Changes may occur due to driver schedules, mechanical failure, 
+                            weather conditions, or unforeseen circumstances. There are many factors 
+                            that may cause delays before and after pickup, such as excessive traffic, 
+                            port congestion, severe weather, or carrier breakdowns. 
+                            In such circumstances, Autopro Logistics will not be held responsible 
+                            for any charges or liabilities resulting from delays in pickup or delivery,
+                            including airline tickets or rental car expenses. The driver’s schedule 
+                            will be provided to the client upon dispatch. The customer is responsible 
+                            for making necessary arrangements to ensure timely pickup and delivery.
+                        </li>
+                        <li>The client agrees not to engage the services of any other broker or carrier 
+                            during the designated shipping period. Doing so will result in a non-refundable
+                            deposit.
+                        </li>
+                        <li>We recommend not placing personal items inside the vehicle, as they are not 
+                            insured. However, if necessary, personal items must be placed in the trunk and
+                            limited to 100 lbs. The carrier is not liable for damage caused by excessive or 
+                            improper loading of personal belongings. Any exceptions must be approved in 
+                            advance by Autopro Logistics. Additional fees may apply for excess weight. 
+                            Misrepresentation of personal items may result in a price adjustment, a dry 
+                            run fee of $150, or no refund upon cancellation if the carrier is dispatched 
+                            under different conditions than expected. If the vehicle is not ready as 
+                            indicated when the driver is dispatched, a rescheduling fee of $75.00 
+                            will apply. If the shipper is unavailable at pickup or delivery, an alternate 
+                            representative must be designated.
+                        </li>
+                        <li>Vehicles must be provided in good running condition with no more than half a 
+                            tank of fuel. The driver is not liable for damage caused by leaking fluids, 
+                            freezing, exhaust issues, or loose/untied antennas. Any claims for loss or 
+                            damage must be noted and signed on the Bill of Lading (BOL) at delivery. 
+                            Autopro Logistics provides door-to-door transport; however, access may be 
+                            limited due to narrow streets, low-hanging trees, or tight turns. In such 
+                            cases, the driver may request to meet at a nearby open parking area (e.g., 
+                            grocery store parking lot).
+                        </li>
+                        <li>Trucking damage claims are covered by carriers from $100,000 up to $250,000 
+                            cargo insurance per load, and a minimum of 3/4 of a million dollars public 
+                            liability and property damage. Any damage incurred to a vehicle during 
+                            transport falls directly under the responsibility of the carrier and not 
+                            Autopro logistics INC . All carriers contracted will have insurance to cover 
+                            damage caused by the driver or theft during transport. If damage is done, 
+                            Autopro logistics INC . will provide you with a full insurance packet for 
+                            the carrier to file a claim. All claims must be noted and signed for at time 
+                            of delivery and submitted in writing within 15 days of delivery.
+                        </li>
+                        <li>If the vehicle is not ready at the scheduled pickup time, a $75.00 
+                            rescheduling fee will apply. If the vehicle becomes unavailable during 
+                            the scheduled pickup window after an order has been placed, the deposit 
+                            will not be refunded.
+                        </li>
+                        <li>The client must not release or receive the vehicle without completing an 
+                            inspection report (Bill of Lading), regardless of time or weather conditions.
+                            Failure to do so may prevent filing a damage claim. Insurance covers only 
+                            damages caused by driver negligence. Any damage must be listed on the BOL 
+                            and signed by the driver before leaving the delivery location. The remaining 
+                            balance must be paid as agreed. Failure to note damage on the BOL releases 
+                            the driver from liability.
+                        </li>
+                        <li>In case of claims or shipment issues, the customer must notify Autopro 
+                            Logistics before the driver leaves and before withholding payment or 
+                            refusing to sign the BOL. Failure to follow this procedure releases 
+                            Autopro Logistics from responsibility for subsequent claims.
+                        </li>
+                        <li>A non-operational fee of $150.00 applies to non-running vehicles. This 
+                            fee is included in the final quote if disclosed. If the vehicle becomes 
+                            non-operational during transport, the fee will be added to the original 
+                            quote. The final confirmed quote will be provided at dispatch.
+                        </li>
+                        <li>Autopro Logistics agrees to arrange prompt transportation but does not 
+                            guarantee specific pickup or delivery dates. A $200 cancellation fee 
+                            applies to orders canceled within 3 business days of the requested pickup 
+                            date. Autopro Logistics is not responsible for rental vehicle costs or 
+                            mechanical failures of transported vehicles. The shipper agrees to pay 
+                            the quoted price and acknowledges no refund will be issued after service 
+                            fulfillment.
+                        </li>
+                        <li>The shipper warrants payment of the agreed price for delivered vehicles. 
+                            This agreement is subject to all carrier tariff terms and the Uniform 
+                            Straight Bill of Lading. This document constitutes the entire agreement 
+                            between the shipper and Autopro Logistics and supersedes all prior oral 
+                            or written representations. Any changes must be in writing and signed by
+                            an authorized officer of Autopro Logistics. Autopro Logistics reserves the
+                            right to cancel orders at any time.
+                        </li>
+                        <li>Once the shipment is delivered and all paperwork is signed, no refunds 
+                            or discounts will be issued by Autopro Logistics.
+                        </li>
+                        <li>This agreement shall be governed by the laws of the State of Texas. 
+                            Any legal action must be filed in a court of proper jurisdiction within 
+                            Florida. Autopro Logistics’ liability is limited to the amount of its 
+                            broker fee. By accepting these terms, the client authorizes a deposit 
+                            via credit/debit card, check by phone, or mail. The remaining balance 
+                            is due upon delivery and must be paid by cash, cashier’s check, or money
+                            order to the authorized carrier.
+                        </li>
+                    </ol>
+                </p>
+            </div>
+                <button id="acceptTerms" class="accept-btn">I Accept</button>
+        </div>
+    </section>
+
+    <section id="faqSection" class="booking-section">
+        <div class="booking-container">
+            <button class="close-booking" id="closeFaq">&times;</button>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">1. What is the cost of shipping a vehicle?<span>+</span></button>
+                        <div class="faq-answer">
+                            Our rates are based on several different factors – size of vehicle, distance of transport, the working condition of the vehicle, time of year transport is required and the general market price for the particular route requested. By filling out a quote form on our home page, we can better estimate the exact costs.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">2. How far in advance should I schedule the transport of my vehicle?<span>+</span></button>
+                        <div class="faq-answer">
+                            We recommend that you schedule your move as soon as possible to ensure that your vehicle is moved within the time frame which best meets you schedule. Usually, we are able to have a truck assigned and on its way to pick-up your vehicle 1 to 5 days from the date the vehicle is first available for pick-up. If your vehicle is available for immediate pick-up, we will work with you on getting your vehicle scheduled as close to the preferred date as possible. It is helpful when transportation orders are submitted approximately 5 days in advance of the available date. Scheduling your vehicle transportation in advance is helpful but it isn't always necessary.
+                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">3. What do I need for reservation?<span>+</span></button>
+                        <div class="faq-answer">
+                            For reservation you would need to share exact pickup and delivery address and names and phone numbers of people who is going to be on pickup and delivery and first available pick up date. A small amount of deposit is required which is 10-20% of your total tariff at the time of booking. Remaining Balance is due on pick up or delivery and you can pay it with cash, cashier’s check or money order to a driver directly.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">4. Are there any additional costs?<span>+</span></button>
+                        <div class="faq-answer">
+                            No, the quote is all inclusive. It covers door to door service, full bumper to bumper insurance, all tax and tolls paid, and personal belongings up to 100 lbs. free of charge.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">5. How does Autopro Logistics calculate shipping cost?<span>+</span></button>
+                        <div class="faq-answer">
+                            There are a few factors that affect the auto transport cost: route distance, vehicle size and condition (running or non-operable), the type of trailer that would be used (open or enclosed) and the season. For example, if you want to ship your vehicle down to Florida, in fall, the cost will be higher due to the tremendous amount of traffic caused by snowbirds moving south to Florida.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">6. What payment options does Autopro Logistics offer?<span>+</span></button>
+                        <div class="faq-answer">
+                            At the time of booking you can pay reservation fee with Credit card/debit card or Cashapp. Remaining amount should be paid to the carrier as cash, cashier’s check or money order. Please keep in mind as carriers don't carry machines with them so they don't accept payments via Credit/debit cards.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">7. What payment methods are available on delivery?<span>+</span></button>
+                        <div class="faq-answer">
+                            Drivers are not allowed to accept credit cards or person checks on delivery. If you have an outstanding balance that is due on delivery, please make sure that you have cash, cashier’s check, or money order.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">8. How long does it take for my vehicle to be picked up?<span>+</span></button>
+                        <div class="faq-answer">
+                            The main factor affecting pick-up time is location. If your vehicle has to be picked up from a big metropolitan area, your auto will usually be picked up on the exact date you need it to be picked up. Keep in mind that sometimes delays might occur due to weather, traffic, and road conditions. If your vehicle has to be picked up from a more rural area, it might take 2 or more days to be picked up.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">9. How long does vehicle delivery take?<span>+</span></button>
+                        <div class="faq-answer">
+                            Once we have confirmed your dates with your driver, you can expect your vehicle to arrive on time. Sometimes, there might be delays that are caused by unfortunate weather conditions, unexpected truck break downs, or another force majeure that the driver might encounter end route. Coast-to-Coast-Shipping usually takes between 7 and 10 days. Shipping a vehicle from north to south and vice versa take from 5 to 7 days. Auto transport under 500 miles should take less than 2 or 3 days, once the vehicle has been picked up.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">10. Are there different types of vehicle transport?<span>+</span></button>
+                        <div class="faq-answer">
+                            Sure. We offer open trailer transport and enclosed transport services.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">11. What does door-to-door transport mean?<span>+</span></button>
+                        <div class="faq-answer">
+                            Door-to-door means the driver picks up and delivers the vehicle as close to your address as possible.
+                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">12. Will my vehicle be transferred to other trucks during transit?<span>+</span></button>
+                        <div class="faq-answer">
+                            Door to door service means we would come and pick up your vehicle at any address and deliver it at any address as long as the drive-in is accessible for 18wheeler (many of the trucks are over 75 ft). If not, you can make a deal with the driver to meet him some place around the corner with the big parking lot.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">13. Can I choose a specific spot on the trailer?<span>+</span></button>
+                        <div class="faq-answer">
+                            Absolutely not. Autopro Logistics makes sure that your vehicle is delivered on the same truck that it has been loaded on. The only time your vehicle might be delivered by another truck is if the truck that had picked up your vehicle has broken down on a route and   Autopro Logistics   finds a replacement to complete your job on time.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">14. What is the difference between open and enclosed transport?<span>+</span></button>
+                        <div class="faq-answer">
+                            Most drivers will load your vehicle wherever they think it is safe. Truckers have to deal with multiple factors when it comes down to loading your vehicle. They have to make sure that they fit all cars properly, so that they don’t exceed the permitted length of the truck, and they also need to make sure that they follow all federal laws, and there is no overweight on any of the axles.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">15. Can I ship personal belongings in my vehicle?<span>+</span></button>
+                        <div class="faq-answer">
+                            Open auto transport is the most common method used to transport a vehicle. Nearly 90% of the vehicles are transported via an open transport. As there is $250.000 insurance coverage on the open transport, there is no need to worry that something might happen to your vehicle. Open transport usually costs about $300 or $400 less than the enclosed transportation. Most clients that are using enclosed transport have exotic vehicles that need the extra level of protection. As the insurance coverage for enclosed transport is higher than for open transport, it is recommended for more expensive supercars.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">16. How much personal stuff can I place in the vehicle?<span>+</span></button>
+                        <div class="faq-answer">
+                            You can have personal belongings up to 100 lbs. free of charge, and it has to be placed in the trunk or back compartment of your vehicle. If you want to place more than 100 lbs., it would be additional, and it has to be in the front or back seat of the car below window level, it cannot be anything heavy and the driver seat must always be empty. Personal belongings inside your vehicle will not be insured.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">17. Is my vehicle insured during transport?<span>+</span></button>
+                        <div class="faq-answer">
+                            The Department of Transportation prohibits the transport of household items with a vehicle while the vehicle is in transit. Personal belongings left in the vehicle are shipped strictly at the owner's risk. If the driver arrives at the pick-up location and sees that your vehicle is slammed to the ground because of the extra weight, he might ask you to remove your belongings, or charge you additionally.  Truck drivers will take no responsibility for damages that arise from household items being kept inside your vehicle.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">18. What should I know about insurance coverage?<span>+</span></button>
+                        <div class="faq-answer">
+                            Your vehicle is fully insured during transit, as carriers have cargo insurance of $250K - $1 million. However, please keep in mind that damages caused by Acts of God (hail, floods, hurricanes, avalanches, etc.), along with damages by road debris are not covered. However, if this is of great concern to you, we can arrange for your vehicle to be transported in an enclosed car carrier for an additional fee.                </div>
+                <div class="faq-item">
+                    <button class="faq-question">19. What if my vehicle is damaged during transport?<span>+</span></button>
+                        <div class="faq-answer">
+                            If you receive your vehicle and notice that there is damage, you must immediately note it on the bill of lading. Next, call USA Car Ship to report the damage. It will be very helpful for us to be aware of this new damage right away, so that we could resolve the issues as fast as possible. Make sure that driver does not leave without you reporting the damage on the bill of lading and the driver signing it.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">20. What happens after a damage claim is submitted?<span>+</span></button>
+                        <div class="faq-answer">
+                            We will ask you to submit both bills of lading along with three estimates from an authorized repair shop. We will facilitate the arbitration with our carrier.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">21. Do I need to be present at pickup or delivery?<span>+</span></button>
+                        <div class="faq-answer">
+                            We do require someone to be present for the pickup and delivery process. Either you or anyone you authorize can be present to sign the Bill of Landing and observe our driver’s vehicle inspection. Once the inspection is complete and the Bill of Lading is signed, you may leave.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">22. What if I cannot be present at pickup or delivery?<span>+</span></button>
+                        <div class="faq-answer">
+                            You can arrange to have a family member, a friend or a co-worker to be present on pick-up or delivery date. However, it is crucial that they are well informed about the inspection that is performed upon loading/unloading. The person who is shipping the vehicle must sign the bill of lading, where the condition of your vehicle is noted.  If another person is receiving your vehicle, then they must be informed that they need to do a thorough inspection on delivery and confirm that the vehicle has been delivered in the same condition as it has been loaded. If there are any damages, the person receiving the car must note them on the same bill of lading.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">23. What paperwork do I need for pickup?<span>+</span></button>
+                        <div class="faq-answer">
+                            You only need to provide the keys to the driver. Your title and insurance are not needed. You only need to sign off your vehicle that it has been picked up on the bill of lading, and then your vehicle will be on the way to its drop-off destination.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">24. What if my vehicle is at an auction?<span>+</span></button>
+                        <div class="faq-answer">
+                            If your car should be picked up from the auction, we will require info about the company name and address, VIN, Lot and Buyer’s number prior the pickup date.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">25. What happens after a driver is assigned?<span>+</span></button>
+                        <div class="faq-answer">
+                            Autopro Logistics Inc.  will provide you with the name and phone number of the driver as soon as a driver has been assigned. The driver will contact you 24 hours prior to the pickup, and again one hour before the pick-up on the move day. Once the driver arrives at your location, he will do an inspection on your vehicle and you will need to sign the bill of lading. Finally, the driver loads your vehicle and then, he leaves your place.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">26. Can you transport non-operable vehicles?<span>+</span></button>
+                        <div class="faq-answer">
+                            Yes, but the exact condition must be noted at the time you place your order. If your vehicle is not operable, an inoperable fee of approximately $200 will be added to the transport cost. Please, make sure that you inform us ahead of time if your vehicle is inoperable, so that we can assign the right driver to ship your vehicle.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">27. How can I track my vehicle?<span>+</span></button>
+                        <div class="faq-answer">
+                            We will provide you with information including estimated pickup and delivery times. Also, we will provide you with the driver's name and phone number so you can give the driver a call directly. If he is busy and he is not able to answer, please give Autopro Logistics a call. We will be able to assist you as well.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">28. Is Autopro Logistics licensed?<span>+</span></button>
+                        <div class="faq-answer">
+                            Autopro Logistics Inc  is licensed by the U.S. Department of Transportation and the Federal Motor Carrier Safety Administration. Our MC# is 01686972and our DOT# is 4322097.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">29. What does it mean that Autopro Logistics is a broker?<span>+</span></button>
+                        <div class="faq-answer">
+                            Autopro Logistics Inc. is a licensed broker, and so we can provide the best auto transport service. We have a network of hundreds of professional car carriers. Our network has been growing and evolving over the years, so that we could promise you a safe and timely pick-up, and prompt and transparent communication at all times. In the unlikely event of damage, Autopro Logistics Inc. is takes responsibility to make sure that the driver’s insurance covers the damage in a timely manner.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">30. Can I choose specific pickup or delivery times?<span>+</span></button>
+                        <div class="faq-answer">
+                            Our carriers provide a window of time during which your car will be picked up or delivered. This can range from 2-4 hours. They will be in touch approximately prior to pick up or delivery to confirm time and place.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">31. What should I do with my E-Z Pass?<span>+</span></button>
+                        <div class="faq-answer">
+                            Please remove your E-Z Pass or any other electronic toll collection mechanism from your vehicle entirely and mail it to your destination or bring it with you. Due to the nature of the automated toll road systems, if your device is left in your car as it is transported, you will incur toll fees as if you were driving the vehicle. Autopro Logistics Inc will not take responsibility for this avoidable expense.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">32. Are you a broker or carrier?<span>+</span></button>
+                        <div class="faq-answer">
+                            Here’s a quick breakdown of what those terms mean and why it matters. Brokers find carriers and schedule shipments — prioritizing customers. Carriers own the trucks, and ship and deliver the cars — prioritizing the shipment. An auto transport management company, such as  Autopro Logistics Inc  , serves customers from end to end, serving as a single point of contact from quote to delivery. When problems arise, an auto transport management company will solve them faster because these companies don’t just care for cars. They care for customers, too.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">33. What services do you offer?<span>+</span></button>
+                        <div class="faq-answer">
+                            At first, this seems like a silly question. An auto transport company will transport cars and trucks, right? But here’s the thing — there are lots of auto transport options customers can choose from. Some companies ship via open-air trailer exclusively, while others offer enclosed trailer shipping, as well. There are multi-vehicle and single-vehicle shipping options. Do you need to ship a car that has been in an accident? Some companies are equipped to ship non-working cars while others only work with operational vehicles. Then there are shippers that can coordinate long-distance shipments by boat, train, or even plane.                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">34. Are there restrictions on vehicle types?<span>+</span></button>
+                        <div class="faq-answer">
+                            Most customers shipping a car, van, SUV, or light truck won’t have any problems finding an auto transport company. But if the vehicle you want to ship is exceptionally valuable (like a race car or an antique car), oversized or heavily modified, or totaled after an accident, special equipment may be necessary to ship it. Not all car shipping companies have specialized towing and loading equipment, so if there’s anything unusual about the vehicle you want to ship, make sure to ask if the company can handle it safely before you book.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">35. Can I get a free quote?<span>+</span></button>
+                        <div class="faq-answer">
+                            Getting a quote from an auto transport company should never mean that you’re under the obligation to use that company. Most shippers know that you’ll be getting quotes from other companies and are okay with that. A deposit should not be required to get a quote, so if a car shipping company will only give you a quote if you make some kind of commitment, move on. As we mentioned above, many companies now have online calculators that will give you a free estimate, but you’ll often get a more accurate quote by talking directly with a representative.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">36. How much will my shipment cost?<span>+</span></button>
+                        <div class="faq-answer">
+                            When you speak to an auto transport company representative directly, your quote will be more accurate because you’ll be able to explain any special needs or requests you have. Make sure you have as much information about your vehicle and your shipment available when you call so the rep can give you an accurate quote.
+                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">37. Does the price include everything?<span>+</span></button>
+                        <div class="faq-answer">
+                            Make sure you double check before you book that the quote you receive is what you’ll pay. You can ask for an itemized list of what the quoted price covers and make it clear that you’d like to know now about any charges, fees, or additional costs that might not be included in the quote. That way, in the unlikely event that you are charged more, you can check your invoice against the itemized service agreement you received before you booked.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">38. How are shipping rates calculated?<span>+</span></button>
+                        <div class="faq-answer">
+                            The quote you receive will not be arbitrary. The cost to ship a car is calculated using a number of factors, including the make and model of the vehicle, the distance it will be shipped, your drop-off and pickup locations, the shipping method you’ve selected, any special handling requests, whether the vehicle runs, demand, seasonal price fluctuations, and the price of gasoline. Generally, shipping a car in an enclosed trailer will cost more than shipping a car on an open carrier. If you’re shipping a vehicle between states, you may pay more than if you’re shipping it within state boundaries. International car shipping will always be more expensive due to tariffs and fees. And it typically costs more to ship larger vehicles like vans or trucks.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">39. What payment options are available?<span>+</span></button>
+                        <div class="faq-answer">
+                            Ask what payment methods they accept, but don’t stop there. Many auto transport companies ask customers to pay a deposit or partial payment when a shipment is scheduled or before they drop off their vehicle. It’s less usual for a reputable car shipping company to ask for payment in full before a vehicle is shipped. Be sure you know how the company you’re talking to operates when it comes to payment, so you’re not surprised by a bill that comes due before you have received your shipment.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">40. Is your company licensed and registered?<span>+</span></button>
+                        <div class="faq-answer">
+                            It’s not that hard to find out whether auto transport companies are registered and licensed, but it’s nice to hear it directly from a representative. Auto transport companies that move cars and trucks across state lines are required to have a USDOT Number by the Federal Motor Carrier Safety Administration. International car shippers additionally have to have a license issued by the Federal Maritime Commission. Once you have a company’s USDOT number, you can look up a company’s operating status, safety record, and other registration numbers here.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">41. Is your company fully insured?<span>+</span></button>
+                        <div class="faq-answer">
+                            All reputable car shipping companies will be fully insured — it’s the law! The best companies have enough coverage to respond to any issues or emergencies that may arise. You can and should ask specific questions: What are the company’s standard shipping insurance options? Can I buy additional insurance? Should the worst happen, will your entire car be covered or just certain parts? Will there be a deductible you have to pay?                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">42. Why should I choose Autopro Logistics?<span>+</span></button>
+                        <div class="faq-answer">
+                            It’s a tough question, but the representative’s answer (and the speed of their answer) will give you a good idea of what the company culture looks like. Ideally, you’re looking for an auto transport company that values customers and has a solid track record of getting cars and trucks where they need to go in a safe and timely fashion. Are you getting the sense that you’re asking too many questions or that your rep is frustrated by your questions? That’s often a huge red flag.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">43. How will my car be transported?<span>+</span></button>
+                        <div class="faq-answer">
+                            You’ve already chosen your shipping method, but it’s nice to know what your car or truck’s journey will look like. What is the loading procedure? Will you need to help? Will the truck make stops along the way? Will your car be left alone for a long period? What happens at delivery?                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">44. What are my timing options for shipment?<span>+</span></button>
+                        <div class="faq-answer">
+                            First, if you need your car to ship on or around a certain date and/or to arrive on or around a certain date, make sure the person you are talking to knows that. Expedited car shipping, or guaranteed pickup, is possible, though it’s more expensive. An auto transport company may be able to offer you several time frame options at different costs.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">45. Do you provide customer support during shipping?<span>+</span></button>
+                        <div class="faq-answer">
+                            Chances are that once your vehicle is on the road, you won’t need frequent updates. Unless, that is, you’re shipping an especially valuable vehicle or you’re shipping your car or truck on a tight schedule. Small brokers and carriers are usually unavailable after hours, which can be inconvenient or even stress-inducing. One of the reasons many people choose larger, nationwide auto transport management companies is that they enjoy the peace of mind of knowing they can get updates while vehicles are end route.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">46. What pickup and delivery options are available?<span>+</span></button>
+                        <div class="faq-answer">
+                            You shouldn’t have to take a road trip just to pick up your car at its destination. Larger auto transport companies will usually have the most drop-off and pickup locations available, but you should always double check that these hubs are convenient for you. Door-to-door service is often available, though it tends to cost more. When you opt for door-to-door service, the driver will deliver your vehicle directly to your home (or office) instead of dropping your car off at a terminal.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">47. How should I prepare my vehicle for shipping?<span>+</span></button>
+                        <div class="faq-answer">
+                            The answer you’ll receive on the phone will probably be: empty it, clean it, and have another set of keys made if you only have one. However, there are more steps that need to be taken. Check out this post for more information about what empty and clean mean in this context, and what else you’ll need to do to prepare your vehicle for its journey.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">48. Can you transport non-running vehicles?<span>+</span></button>
+                        <div class="faq-answer">
+                            Since the bulk of car shipping involves vehicles riding on or in a truck, you might think this question is irrelevant. Problems arise, however, when customers trying to ship non-running cars and trucks don’t mention that the vehicle doesn’t run and so drivers show up without the equipment necessary to load those vehicles onto trailers. If you need to ship a non-running vehicle, make sure you clarify whether it can roll, brake, and steer. Many auto transport companies can handle non-working vehicles as long as they can do these things. Fewer are equipped to transport cars that can’t move at all or be moved safely without a forklift or other specialized equipment.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">49. What documents are required for shipping a vehicle?<span>+</span></button>
+                        <div class="faq-answer">
+                            Most of the time, you’ll only need to provide your registration and insurance documentation plus a photo ID. Some auto transport companies will also require you to show the title. That’s for domestic shipments. If you’re shipping a car internationally, there will be other requirements set by the country that will receive your vehicle. If you don’t understand what the requirements are, you risk a situation where your car can’t be released from the port at its destination.                        </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">50. Do I need to be present for pickup and delivery?<span>+</span></button>
+                        <div class="faq-answer">
+                            Most auto transport companies will require that an adult be present at both pickup and delivery because someone will need to hand over and then accept the keys and sign off on the paperwork (most often the inspection report and the bill of lading). However, that someone doesn’t have to be you. Typically, you can choose a friend, colleague, neighbor, or relative to be your designated agent at pickup and delivery if you’re unable to be there yourself. Make sure that the company you’re talking to allows this.                        </div>
+                </div>
+    </section>
+
+    <section id="services" class="section reveal">
+        <h2 class="section-title">Premium Transport Services</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Open Car Transport</h3>
+                    <p>Efficient nationwide shipping with maximum reliability.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-car-side"></i>
+                    <h3>Enclosed Transport</h3>
+                    <p>Elite protection for luxury, exotic & classic vehicles.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Expedited Shipping</h3>
+                    <p>Priority transport with faster pickup and delivery.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-road"></i>
+                    <h3>Cross Country</h3>
+                    <p>Secure coast-to-coast vehicle logistics solutions.</p>
+                </div>
+            </div>
+    </section>
+    <section id="about" class="section reveal">
+            <h2 class="section-title">Why Autopro Logistics</h2>
+        <div class="about-container">
+                <p>
+                    We provide safe, fully insured auto transport services nationwide. 
+                    Our professional carrier network ensures white-glove handling and timely delivery.
+                </p>
+            <div class="features">
+                <div><i class="fas fa-shield-alt"></i> Licensed & Insured</div>
+                <div><i class="fas fa-dollar-sign"></i> Transparent Pricing</div>
+                <div><i class="fas fa-truck-moving"></i> Door-to-Door Delivery</div>
+                <div><i class="fas fa-headset"></i> Dedicated Support</div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section reveal">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Contact Autopro Logistics</h2>
+                <p class="contact-subtitle">Professional Auto Transport Solutions Nationwide</p>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>(000) 000-0000</p>
+                        </div>
+                    </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>info@autoprologisticsinc.com</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Office Address</h4>
+                    <p>123 Berkeley Ave, Selden, NY 11784</p>
+                </div>
+            </div>
+            <div class="compliance-box">
+                    <h4>Licensed & Registered</h4>
+                <div class="compliance-details">
+                    <p><strong>USDOT:</strong> 4322097</p>
+                    <p><strong>MC:</strong> 01686972</p>
+                </div>
+                <div class="compliance-logos">
+                    <img src="fmcsa.png" alt="FMCSA Registered">
+                    <img src="google.png" alt="Google Certification">
+                    <img src="transport.png" alt="Transport Certification">
+                    <img src="bbb.png" alt="BBB Certification">
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Send Us A Message</h3>
+                <form action="https://formsubmit.co/info@autoprologisticsinc.com" method="POST">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email Address" required>
+                    <input type="text" name="Phone" placeholder="Phone Number">
+                    <select name="Inquiry Type">
+                        <option>General Inquiry</option>
+                        <option>Quote Follow Up</option>
+                        <option>Carrier Inquiry</option>
+                        <option>Dealer / Fleet Transport</option>
+                    </select>
+                    <textarea name="Message" placeholder="Your Message" required></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps?q=123+Berkeley+Ave,+Selden,+NY+11784&output=embed"
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+
+    <footer>
+        © 2026 Autopro Logistics Inc. | All Rights Reserved
+    </footer>
+</body>
+</html>
